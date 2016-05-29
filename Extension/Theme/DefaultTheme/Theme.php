@@ -13,11 +13,7 @@ use Fraym\Annotation\Registry;
  * @package Extension\Theme\DefaultTheme
  * @Registry(
  * name="Fraym Default Theme",
- * description="Default Theme for Fraym",
- * version="1.0.0",
- * author="Fraym.org",
- * website="http://www.fraym.org",
- * repositoryKey="FRAYM_EXT_DEFAULT_THEME",
+ * repositoryKey="fraym/default-theme-extension",
  * files={
  *      "Extension/Theme/DefaultTheme/",
  *      "Template/Default/Extension/Theme/DefaultTheme/",
