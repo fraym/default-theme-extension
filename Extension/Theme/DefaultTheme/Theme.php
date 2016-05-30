@@ -14,14 +14,6 @@ use Fraym\Annotation\Registry;
  * @Registry(
  * name="Fraym Default Theme",
  * repositoryKey="fraym/default-theme-extension",
- * files={
- *      "Extension/Theme/DefaultTheme/",
- *      "Template/Default/Extension/Theme/DefaultTheme/",
- *      "Template/Dynamic/Default-Theme/",
- *      "Public/js/default_theme/",
- *      "Public/css/default_theme/",
- *      "Public/images/default_theme/"
- * },
  * entity={
  *      "\Fraym\Template\Entity\Template"={
  *          {
