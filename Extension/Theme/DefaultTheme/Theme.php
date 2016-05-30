@@ -18,14 +18,6 @@ use Fraym\Annotation\Registry;
  * author="Fraym.org",
  * website="http://www.fraym.org",
  * repositoryKey="FRAYM_EXT_DEFAULT_THEME",
- * files={
- *      "Extension/Theme/DefaultTheme/",
- *      "Template/Default/Extension/Theme/DefaultTheme/",
- *      "Template/Dynamic/Default-Theme/",
- *      "Public/js/default_theme/",
- *      "Public/css/default_theme/",
- *      "Public/images/default_theme/"
- * },
  * entity={
  *      "\Fraym\Template\Entity\Template"={
  *          {
