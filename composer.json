@@ -19,6 +19,11 @@
         "design",
         "extension"
     ],
+    "autoload": {
+        "psr-4": {
+            "Extension\\DefaultTheme\\": "Extension/DefaultTheme/"
+        }
+    },
     "require": {
         "fraym/core": "^1.0.0"
     }
