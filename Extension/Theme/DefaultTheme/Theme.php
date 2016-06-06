@@ -5,7 +5,7 @@
  * @copyright Dominik Weber <info@fraym.org>
  * @license   http://www.opensource.org/licenses/gpl-license.php GNU General Public License, version 2 or later (see the LICENSE file)
  */
-namespace Extension\Theme\DefaultTheme;
+namespace Fraym\Extension\Theme\DefaultTheme;
 
 use Fraym\Annotation\Registry;
 
