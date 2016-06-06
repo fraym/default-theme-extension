@@ -21,7 +21,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Fraym\\Extension\\DefaultTheme\\": "Extension/DefaultTheme/"
+            "Fraym\\Extension\\Theme\\DefaultTheme\\": "Extension/DefaultTheme/"
         }
     },
     "require": {
