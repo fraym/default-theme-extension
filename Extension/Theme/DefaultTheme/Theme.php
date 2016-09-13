@@ -14,6 +14,7 @@ use Fraym\Annotation\Registry;
  * @Registry(
  * name="Fraym Default Theme",
  * repositoryKey="fraym/default-theme-extension",
+ * onRegister="onRegister",
  * entity={
  *      "\Fraym\Template\Entity\Template"={
  *          {
@@ -27,4 +28,15 @@ use Fraym\Annotation\Registry;
  */
 class Theme
 {
+    /**
+     * @Inject
+     * @var \Fraym\Database\Database
+     */
+    protected $db;
+
+    public function onRegister()
+    {
+        $stmt = $this->db->getConnection()->prepare(file_get_contents('Extension/Theme/DefaultTheme/Data/dummy_blocks.sql'));
+        $stmt->execute();
+    }
 }

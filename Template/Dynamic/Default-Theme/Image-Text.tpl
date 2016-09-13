@@ -30,29 +30,6 @@
                     <input type="text" class="form-control" name="config[{$localeId}][image]" value="{$config->$localeId->image}" data-absolutepath="false" data-filepath="true" data-singlefileselect="1" data-filefilter="*.jpg,*.png" />
                 </div>
             </div>
-            
-            
-            
-            <div class="row">
-                <div class="col-xs-12">
-                    <label>{_('Headline')}</label>
-                    <input type="text" class="form-control" name="config[{$localeId}][headline]" value="{$config->$localeId->headline}" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <label>
-                        {_('Text')}
-                    </label>
-                    <textarea name="config[{$localeId}][text]" class="form-control">{$config->$localeId->text}</textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <label>{_('Image')}</label>
-                    <input type="text" class="form-control" name="config[{$localeId}][image]" value="{$config->$localeId->image}" data-absolutepath="false" data-filepath="true" data-singlefileselect="1" data-filefilter="*.jpg,*.png" />
-                </div>
-            </div>
         {/function}
 
         <div>
@@ -85,7 +62,7 @@
                     {if $config->$locale->headline}
                         <div class="section-title">
                             {if $config->$locale->preheadline || $inEditMode}<h4{if $inEditMode} data-inline-editor-field="preheadline"{/if}>{$config->$locale->preheadline}</h4>{/if}
-                            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{$config->$locale->headline}</h2>
+                            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{{$config->$locale->headline}}</h2>
                             <hr>
                             <div class="clearfix"></div>
                         </div>

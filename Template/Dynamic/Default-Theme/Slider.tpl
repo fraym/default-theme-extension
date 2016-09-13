@@ -102,7 +102,7 @@
 <div class="overlay">
     <div class="container">
         <div class="section-title center">
-            <h2{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{$config->$locale->headline}</h2>
+            <h2{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{{$config->$locale->headline}}</h2>
             <div class="line">
                 <hr>
             </div>

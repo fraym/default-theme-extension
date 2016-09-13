@@ -47,8 +47,8 @@
 <div id="tf-home" class="text-center"{if $config->$locale->image} style="background-image:url('<block type="image" maxWidth="1200" srcOnly="true" method="resize" src="{$config->$locale->image}"></block>')" {/if}>
     <div class="overlay">
         <div class="content">
-            <h1{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{$config->$locale->headline}</h1>
-            <p{if $inEditMode} data-inline-editor-field="config[{$locale}][text]"{/if} class="lead">{$config->$locale->text}</p>
+            <h1{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{{$config->$locale->headline}}</h1>
+            <p{if $inEditMode} data-inline-editor-field="config[{$locale}][text]"{/if} class="lead">{{$config->$locale->text}}</p>
             <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
         </div>
     </div>

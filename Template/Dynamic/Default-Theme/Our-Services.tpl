@@ -74,12 +74,12 @@
 <div id="tf-services" class="text-center">
     <div class="container">
         <div class="section-title center">
-            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{$config->$locale->headline}</h2>
+            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{{$config->$locale->headline}}</h2>
             <div class="line">
                 <hr>
             </div>
             <div class="clearfix"></div>
-            <small><em><div{if $inEditMode} data-inline-editor-field="smallText"{/if}>{$config->$locale->smallText}</div></em></small>
+            <small><em><div{if $inEditMode} data-inline-editor-field="smallText"{/if}>{{$config->$locale->smallText}}</div></em></small>
         </div>
         <div class="space"></div>
         <div class="row">
