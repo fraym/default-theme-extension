@@ -18,7 +18,7 @@
                 {else}
                     <form action="" method="post">
                         <input type="hidden" name="mailform" value="1"/>
-                        <input type="hidden" name="required[msg]" value="1"/>
+                        <input type="hidden" name="required[msg]" value="notEmpty"/>
 
                         <div class="row">
                             <div class="col-md-12">
