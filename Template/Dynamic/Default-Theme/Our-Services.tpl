@@ -74,33 +74,33 @@
 <div id="tf-services" class="text-center">
     <div class="container">
         <div class="section-title center">
-            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{{$config->$locale->headline}}</h2>
+            <h2{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{{$config->$locale->headline}}</h2>
             <div class="line">
                 <hr>
             </div>
             <div class="clearfix"></div>
-            <small><em><div{if $inEditMode} data-inline-editor-field="smallText"{/if}>{{$config->$locale->smallText}}</div></em></small>
+            <small><em><div{if $inEditMode} data-inline-editor-field="config[{$locale}][smallText]"{/if}>{{$config->$locale->smallText}}</div></em></small>
         </div>
         <div class="space"></div>
         <div class="row">
             <div class="col-md-3 col-sm-6 service">
                 <i class="fa fa-desktop"></i>
-                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="icon1"{/if}>{{$config->$locale->icon1}}</div>
+                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="config[{$locale}][icon1]"{/if}>{{$config->$locale->icon1}}</div>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
                 <i class="fa fa-mobile"></i>
-                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="icon2"{/if}>{{$config->$locale->icon2}}</div>
+                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="config[{$locale}][icon2]"{/if}>{{$config->$locale->icon2}}</div>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
                 <i class="fa fa-camera"></i>
-                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="icon3"{/if}>{{$config->$locale->icon3}}</div>
+                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="config[{$locale}][icon3]"{/if}>{{$config->$locale->icon3}}</div>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
                 <i class="fa fa-bullhorn"></i>
-                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="icon4"{/if}>{{$config->$locale->icon4}}</div>
+                <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="config[{$locale}][icon4]"{/if}>{{$config->$locale->icon4}}</div>
             </div>
         </div>
     </div>

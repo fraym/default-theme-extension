@@ -61,14 +61,14 @@
                 <div class="about-text">
                     {if $config->$locale->headline}
                         <div class="section-title">
-                            {if $config->$locale->preheadline || $inEditMode}<h4{if $inEditMode} data-inline-editor-field="preheadline"{/if}>{$config->$locale->preheadline}</h4>{/if}
-                            <h2{if $inEditMode} data-inline-editor-field="headline"{/if}>{{$config->$locale->headline}}</h2>
+                            {if $config->$locale->preheadline || $inEditMode}<h4{if $inEditMode} data-inline-editor-field="config[{$locale}][preheadline]"{/if}>{$config->$locale->preheadline}</h4>{/if}
+                            <h2{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{{$config->$locale->headline}}</h2>
                             <hr>
                             <div class="clearfix"></div>
                         </div>
                     {/if}
 
-                    <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="rte"{/if}>{{$config->$locale->rte}}</div>
+                    <div{if $inEditMode} data-inline-editor-field="config[{$locale}][rte]" data-inline-editor-field="rte"{/if}>{{$config->$locale->rte}}</div>
                 </div>
             </div>
         </div>
