@@ -36,7 +36,11 @@ class Theme
 
     public function onRegister()
     {
-        $stmt = $this->db->getConnection()->prepare(file_get_contents('Extension/Theme/DefaultTheme/Data/dummy_blocks.sql'));
+        $tablePrefix = 'fraym_';
+        if(defined('DB_TABLE_PREFIX')) {
+            $tablePrefix = DB_TABLE_PREFIX;
+        }
+        $stmt = $this->db->getConnection()->prepare(str_replace('###TABLE_PREFIX###', $tablePrefix, file_get_contents('Extension/Theme/DefaultTheme/Data/dummy_blocks.sql')));
         $stmt->execute();
     }
 }
