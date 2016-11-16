@@ -87,7 +87,7 @@
                         {localeConfig($config, $locale.id)}
 
                         <div class="pull-right clearfix">
-                            <button id="add-slide" class="btn btn-default" data-repeat-add="slide-item-{$locale.id}">{_('Add slide item')}</button>
+                            <button id="add-slide" type="button" class="btn btn-default" data-repeat-add="slide-item-{$locale.id}">{_('Add slide item')}</button>
                         </div>
                     </div>
                 {/foreach}
