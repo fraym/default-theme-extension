@@ -54,7 +54,7 @@
 <div id="tf-about">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6"{if $inEditMode} data-inline-editor-image="config[{$locale}][image]"{/if}>
                 <block type="image" maxWidth="555" method="resize" src="{$config->$locale->image}" class="img-responsive"></block>
             </div>
             <div class="col-md-6">
@@ -68,7 +68,7 @@
                         </div>
                     {/if}
 
-                    <div{if $inEditMode} data-inline-editor-field="config[{$locale}][rte]" data-inline-editor-field="rte"{/if}>{{$config->$locale->rte}}</div>
+                    <div{if $inEditMode} data-inline-editor-field="config[{$locale}][rte]" data-inline-editor-rte="true"{/if}>{{$config->$locale->rte}}</div>
                 </div>
             </div>
         </div>

@@ -109,6 +109,10 @@ font-weight: 900;
  display: none;
 }
 
+.container .container {
+	width: auto;
+}
+
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
@@ -592,3 +596,4 @@ nav#footer p{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
+}

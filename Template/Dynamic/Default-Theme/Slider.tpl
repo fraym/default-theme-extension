@@ -98,7 +98,7 @@
     </template>
 </block>
 
-<div class="text-center slider-wrapper"{if $config->$locale->backgroundImage} style="background-image:url('<block type="image" width="1200" srcOnly="true" method="resize" src="{$config->$locale->backgroundImage}"></block>')" {/if}>
+<div{if $inEditMode} data-inline-editor-image="config[{$locale}][backgroundImage]"{/if} class="text-center slider-wrapper"{if $config->$locale->backgroundImage} style="background-image:url('<block type="image" width="1200" srcOnly="true" method="resize" src="{$config->$locale->backgroundImage}"></block>')" {/if}>
 <div class="overlay">
     <div class="container">
         <div class="section-title center">
@@ -111,7 +111,7 @@
         <div id="slider-{$id}" class="owl-carousel owl-theme">
             {foreach $config->$locale->items as $k => $item}
                 <div class="item">
-                    <div class="thumbnail">
+                    <div class="thumbnail"{if $inEditMode} data-inline-editor-image="config[{$locale}][items][{$k}][image]"{/if}>
                         <block type="image" autosize="1" src="{$item.image}"{if $item.roundImage} class="img-circle team-img"{/if}></block>
                         <div{if $inEditMode} data-inline-editor-rte="true" data-inline-editor-field="config[{$locale}][items][{$k}][rte]"{/if} class="caption">
                             {{$item.rte}}

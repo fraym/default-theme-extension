@@ -44,7 +44,7 @@
     </template>
 </block>
 
-<div id="tf-home" class="text-center"{if $config->$locale->image} style="background-image:url('<block type="image" maxWidth="1200" srcOnly="true" method="resize" src="{$config->$locale->image}"></block>')" {/if}>
+<div{if $inEditMode} data-inline-editor-image="config[{$locale}][image]"{/if} id="tf-home" class="text-center"{if $config->$locale->image} style="background-image:url('<block type="image" maxWidth="1200" srcOnly="true" method="resize" src="{$config->$locale->image}"></block>')" {/if}>
     <div class="overlay">
         <div class="content">
             <h1{if $inEditMode} data-inline-editor-field="config[{$locale}][headline]"{/if}>{{$config->$locale->headline}}</h1>
